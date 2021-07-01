@@ -17,9 +17,4 @@ public class SuperHeroRepository implements PanacheMongoRepository<SuperHero> {
     public Stream<SuperHero> findByPowers(@NonNull final String... power){
         return find("powers", power).stream().distinct();
     }
-
-    public void deleteLoics(){
-        delete("name", "Loïc");
-    }
-
 }
