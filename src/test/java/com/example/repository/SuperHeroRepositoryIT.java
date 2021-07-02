@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.SAME_THREAD;
 @Testcontainers
 @QuarkusTest
 @NotThreadSafe
-class SuperHeroRepositoryTest {
+class SuperHeroRepositoryIT {
 
     @Inject
     SuperHeroRepository superHeroRepository;
@@ -46,6 +46,7 @@ class SuperHeroRepositoryTest {
     @Execution(SAME_THREAD)
     void should_save_and_retrieve_superheroes_correctly() {
         superHeroRepository.persistOrUpdate(batman);
+        assertThat(superHeroRepository.count()).isEqualTo(1);
         assertTrue(superHeroRepository.findByName("Batman").allMatch(superHero -> superHero.getName().equalsIgnoreCase("Batman")));
         assertThat(superHeroRepository.findByPowers("brilliant").findFirst().orElseThrow())
                 .usingRecursiveComparison()
