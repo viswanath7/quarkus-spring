@@ -1,5 +1,7 @@
 # quarkus-spring project
 
+[![quarkus-spring-master Actions Status](https://github.com/viswanath7/quarkus-spring/actions/workflows/maven.yml/badge.svg)](https://github.com/viswanath7/quarkus-spring/actions)
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
