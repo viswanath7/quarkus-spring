@@ -1,10 +1,12 @@
-# quarkus-spring project
+# Demonstration of quarkus application
 
 [![quarkus-spring-master Actions Status](https://github.com/viswanath7/quarkus-spring/actions/workflows/maven.yml/badge.svg)](https://github.com/viswanath7/quarkus-spring/actions)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+
+The master brancher is the simplest. The other two branches integrate with mongo database in two different styles.
 
 ## Running the application in dev mode
 
